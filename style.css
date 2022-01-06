@@ -1,0 +1,98 @@
+*:focus {
+    outline: none;
+}
+
+/* html {
+    background-image: linear-gradient(135deg, #c95dc2 10%, #a1dbf0 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+.gallery img {
+    /*
+    The original images are all different sizes but we need
+    them to be consistent for the gallery layout to look good.
+    */
+    height: 200px;
+
+    /* add an outline around each picture */
+    border: 4px ridge yellow;
+}
+
+.gallery p {
+    text-align: center;
+    margin-top: 0;
+}
+
+body {
+    text-align: center;
+    height: 120vh;
+    color: navy;
+    font-family: helvetica;
+    font-weight: 300;
+    background-image: linear-gradient(135deg, #c95dc2 10%, #a1dbf0 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.picture-url {
+    border: 2px solid navy;
+    margin: 0;
+    transition: 0.3s;
+    width: 80%;
+}
+
+.picture-url:hover {
+    box-shadow: 2px 2px 8px black;
+}
+
+p {
+    display: block;
+    margin: auto 0;
+    width: 60%;
+}
+
+.picture-url::placeholder {
+    font-family: helvetica;
+    font-weight: 300;
+    outline: none;
+}
+
+.added-images {
+    height: 50px;
+    margin: 0 5px;
+}
+
+.custom-button {
+    color: navy;
+    padding: 5px 10px;
+    border: 0px solid black;
+    background-image: linear-gradient(135deg, #16abe0 10%, #a1dbf0 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 0 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: helvetica;
+    font-weight: 300;
+}
+
+.custom-button:hover {
+    box-shadow: 2px 2px 8px black;
+}
+
+.input-button-container {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center;
+    background: white;
+    width: 80%;
+    padding: 20px;
+    outline: none;
+    margin-top: 10px;
+}
